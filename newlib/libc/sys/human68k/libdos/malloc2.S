@@ -6,7 +6,7 @@
 _dos_malloc2:
 	move.l	%sp@(8), %sp@-
 	move.w	%sp@(10), %sp@-
-	cmpi.w	#0x200+14, _vernum+2	| 2.14
+	cmpi.w	#0x200+14, _dos_vernum+2	| 2.14
 	bcss	2f
 	.short	0xff88
 	bras	3f

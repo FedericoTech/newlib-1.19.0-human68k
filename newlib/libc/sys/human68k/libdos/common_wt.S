@@ -7,7 +7,7 @@ _dos_common_wt:
 	movem.l	%sp@(4), %d0-%d1/%a0-%a1
 	movem.l	%d0-%d1/%a0-%a1, %sp@-
 	move.w	#2, %sp@-
-	cmpi.w	#0x200+14, _vernum+2	| 2.14
+	cmpi.w	#0x200+14, _dos_vernum+2	| 2.14
 	bcss	2f
 	.short	0xff85
 	bras	3f

@@ -6,7 +6,7 @@
 _dos_move:
 	move.l	%sp@(8), %sp@-
 	move.l	%sp@(8), %sp@-
-	cmpi.w	#0x200+14, _vernum+2	| 2.14
+	cmpi.w	#0x200+14, _dos_vernum+2	| 2.14
 	bcss	2f
 	.short	0xff86
 	bras	3f

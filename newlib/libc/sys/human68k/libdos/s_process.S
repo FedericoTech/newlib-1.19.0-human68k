@@ -7,7 +7,7 @@ _dos_s_process:
 	movem.l	%sp@(4), %d0-%d1/%a0-%a1
 	movem.l	%d1/%a0-%a1, %sp@-
 	move.w	%d0, %sp@-
-	cmpi.w	#0x200+14, _vernum+2	| 2.14
+	cmpi.w	#0x200+14, _dos_vernum+2	| 2.14
 	bcss	2f
 	.short	0xffaf
 	bras	3f

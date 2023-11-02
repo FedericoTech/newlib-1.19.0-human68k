@@ -5,7 +5,7 @@
 .type _dos_get_fcb_adr,@function
 _dos_get_fcb_adr:
 	move.w	%sp@(6), %sp@-
-	cmpi.w	#0x200+14, _vernum+2	| 2.14
+	cmpi.w	#0x200+14, _dos_vernum+2	| 2.14
 	bcss	2f
 	.short	0xffac
 	bras	3f

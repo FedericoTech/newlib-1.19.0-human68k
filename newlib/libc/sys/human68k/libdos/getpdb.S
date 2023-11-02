@@ -4,7 +4,7 @@
 .global _dos_getpdb
 .type _dos_getpdb,@function
 _dos_getpdb:
-	cmpi.w	#0x200+14, _vernum+2	| 2.14
+	cmpi.w	#0x200+14, _dos_vernum+2	| 2.14
 	bcss	2f
 	.short	0xff81
 	bras	3f

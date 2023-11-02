@@ -6,7 +6,7 @@
 _dos_common_del:
 	move.l	%sp@(4), %sp@-
 	move.w	#5, %sp@-
-	cmpi.w	#0x200+14, _vernum+2	| 2.14
+	cmpi.w	#0x200+14, _dos_vernum+2	| 2.14
 	bcss	2f
 	.short	0xff85
 	bras	3f
