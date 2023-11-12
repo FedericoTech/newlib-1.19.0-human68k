@@ -250,7 +250,7 @@ struct dos_filbuf {
 	unsigned short	date;
 	unsigned int	filelen;
 	char		name[23];
-} __attribute__((__packed__));
+}; //__attribute__((__packed__));
 
 struct dos_exfilbuf {
 	unsigned char	searchatr;
