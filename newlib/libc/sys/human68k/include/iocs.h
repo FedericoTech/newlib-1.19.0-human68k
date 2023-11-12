@@ -258,7 +258,7 @@ extern void	_iocs_b_era_ed (void);
 extern void	_iocs_b_era_st (void);
 extern int	_iocs_b_format (int, int, int, const void *);
 extern void	_iocs_b_ins (int);
-extern void *	_iocs_b_intvcs (int vector, void *addr);
+extern void *	_iocs_b_intvcs (int vector, int addr);
 extern int	_iocs_b_keyinp (void);
 extern int	_iocs_b_keysns (void);
 extern void	_iocs_b_left (int);
