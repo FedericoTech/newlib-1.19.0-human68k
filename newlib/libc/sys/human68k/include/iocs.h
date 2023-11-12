@@ -4,7 +4,7 @@
 #include <sys/cdefs.h>
 #include <sys/types.h>
 
-typedef unsigned int iocs_color_t;
+typedef unsigned short iocs_color_t;
 
 struct iocs_boxptr {
   short	x1;
